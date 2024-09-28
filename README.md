@@ -30,6 +30,8 @@ To get the group or channel ID:
 2. In the group or channel, send the command: /get_group_id
 3. The bot will respond with the group's or channel's ID, which you can then use to update the forwarding logic.
 
+**For channels, you need to forward a message from the channel to the bot directly to retrieve the channel ID.** Once forwarded, the bot will respond with the channel's ID.
+
 ### 4. Get the Topic ID (for Supergroups with Topics)
 To get the ID of a particular topic within a supergroup:
 1. Go to the desired topic within the supergroup.
@@ -72,3 +74,4 @@ If you want to forward messages from a private channel to a group and also from 
 2. Install the dependencies: pip install -r requirements.txt
 3. Configure the bot token and IDs as explained above.
 4. Run the bot: python main.py
+

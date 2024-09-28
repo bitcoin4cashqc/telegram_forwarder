@@ -25,57 +25,7 @@ In the provided Python script, replace the placeholder token with the token rece
 Edit the line in the script:
 TOKEN = "YOUR_BOT_TOKEN"
 
-### 3. Get the Group or Channel ID
-To get the group or channel ID:
-1. **Add the bot to the group or channel** where you want to forward messages.
-2. In the group or channel, send the command: `/get_group_id`
-3. The bot will respond with the group's or channel's ID, which you can then use to update the forwarding logic.
 
-### 4. Get the Topic ID (for Supergroups with Topics)
-To get the ID of a particular topic within a supergroup:
-1. Go to the desired topic within the supergroup.
-2. In the topic, send the command: `/get_group_id`
-3. The bot will respond with both the group ID and the **Topic ID** (`message_thread_id`). The topic ID will allow the bot to forward messages specifically to this topic.
-
-### 5. Edit the `TARGET_GROUPS` in the Code
-Once you have the group, channel, and topic IDs, edit the `TARGET_GROUPS` list in the script to include them.
-
-For example:
-
-
-Apologies for the confusion! Here is the corrected README.md in plain markdown that will work correctly when rendered on GitHub:
-
-markdown
-Copy code
-# Telegram Bot for Forwarding Messages
-
-This bot forwards messages from specified channels, groups, or supergroups to other target groups or channels. It also provides the functionality to get the IDs for groups, channels, and topics within supergroups.
-
-## Features
-- Automatically forwards messages from allowed users in specified groups or channels.
-- Retrieves and displays the group, channel, or topic ID when requested.
-- Supports forwarding messages to specific topics within supergroups.
-
-## Requirements
-
-1. Python 3.7 or higher
-2. Install dependencies: `pip install -r requirements.txt`
-
-## How to Set Up
-
-### 1. Create a Bot using BotFather
-1. Open Telegram and search for the `@BotFather` bot.
-2. Send the `/newbot` command and follow the instructions to create a new bot.
-3. BotFather will provide you with an API token for your bot. Save this token, as it will be needed in the code.
-
-### 2. Configure the Bot Token
-In the provided Python script, replace the placeholder token with the token received from BotFather.
-
-Edit the line in the script:
-TOKEN = "YOUR_BOT_TOKEN"
-
-vbnet
-Copy code
 
 ### 3. Get the Group or Channel ID
 To get the group or channel ID:
